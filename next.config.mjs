@@ -39,13 +39,18 @@ const nextConfig = {
     imageSizes: [240, 384, 512],
     unoptimized: false,
   },
-
   experimental: {
     webpackBuildWorker: true,
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
-
+  webpack(config) {
+    config.resolve.alias = {
+      ...(config.resolve.alias || {}),
+      "@": new URL(".", import.meta.url).pathname,
+    }
+    return config
+  },
   async headers() {
     return [
       {
@@ -58,7 +63,6 @@ const nextConfig = {
 
 if (userConfig) {
   const config = userConfig.default || userConfig
-
   for (const key in config) {
     if (typeof nextConfig[key] === "object" && !Array.isArray(nextConfig[key])) {
       nextConfig[key] = {
