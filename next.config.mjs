@@ -23,14 +23,6 @@ const securityHeaders = [
   },
 ]
 
-try {
-  userConfig = await import("./v0-user-next.config.mjs")
-} catch (e) {
-  try {
-    userConfig = await import("./v0-user-next.config")
-  } catch (innerError) {}
-}
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   productionBrowserSourceMaps: true,
