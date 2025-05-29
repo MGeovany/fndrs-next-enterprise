@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui"
+import { Button } from "@/components/ui/button/index"
 import SEO from "@/next-seo.config"
 
 import { Metadata } from "next"
