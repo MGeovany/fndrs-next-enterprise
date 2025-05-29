@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.thefndrs.com
+
+# Sitemaps
+Sitemap: https://www.thefndrs.com/sitemap.xml
