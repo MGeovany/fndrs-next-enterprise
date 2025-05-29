@@ -20,7 +20,7 @@ try {
   fs.accessSync(nextMetaRoot, fs.constants.R_OK)
 } catch (err) {
   console.error(
-    `No build output found at "${nextMetaRoot}" - you may not have your working directory set correctly, or not have run "next build".`
+    `No build output found at "${nextMetaRoot}" - you may not have your working directory set correctly, or not have run "next build".`,
   )
   process.exit(1)
 }
@@ -86,7 +86,7 @@ function getScriptSizes(scriptPaths) {
 
       return acc
     },
-    { raw: 0, gzip: 0 }
+    { raw: 0, gzip: 0 },
   )
 
   return res

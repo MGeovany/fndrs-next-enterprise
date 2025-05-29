@@ -1,11 +1,11 @@
+import { Button } from "components/ui/button/button"
 import { Metadata } from "next"
-import { Button } from "components/ui/button"
 
 export const metadata: Metadata = {
   title: "FNDRS Next.js Enterprise Boilerplate",
   twitter: {
-    card: "summary_large_image"
-  }
+    card: "summary_large_image",
+  },
 }
 
 export default function Web() {

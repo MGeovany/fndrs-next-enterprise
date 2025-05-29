@@ -1,5 +1,4 @@
 import { cva, type VariantProps } from "class-variance-authority"
-
 import { twMerge } from "tailwind-merge"
 
 const button = cva(
@@ -30,7 +29,7 @@ const button = cva(
       intent: "primary",
       size: "lg",
     },
-  }
+  },
 )
 
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLAnchorElement>, VariantProps<typeof button> {
