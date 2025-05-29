@@ -5,8 +5,6 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// edited to work with the appdir by @raphaelbadia
-
 const gzSize = require("gzip-size")
 const mkdirp = require("mkdirp")
 const fs = require("fs")

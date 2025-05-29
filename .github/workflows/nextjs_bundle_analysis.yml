@@ -1,4 +1,4 @@
-name: "Next.js Bundle Analysis"
+name: "FNDRS Next.js Bundle Analysis"
 
 on:
   push:
@@ -13,7 +13,6 @@ on:
 
 defaults:
   run:
-    # change this if your nextjs app does not live at the root of the repo
     working-directory: ./
 
 jobs:
@@ -46,13 +45,11 @@ jobs:
           cache-name: cache-next-build
         with:
           path: .next/cache
-          # change this if you prefer a more strict cache
           key: ${{ runner.os }}-build-${{ env.cache-name }}
 
       - name: Build next.js app
         env:
           SKIP_BUILD_PRODUCT_REDIRECTS: 1
-        # change this if your site requires a custom build command
         run: pnpm build
 
       # Here's the first place where next-bundle-analysis' own script is used
