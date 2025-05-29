@@ -1,11 +1,10 @@
 import eslintPluginNext from "@next/eslint-plugin-next"
-// https://github.com/francoismassart/eslint-plugin-tailwindcss/pull/381
-// import eslintPluginTailwindcss from "eslint-plugin-tailwindcss"
 import eslintPluginStorybook from "eslint-plugin-storybook"
 import typescriptEslint from "typescript-eslint"
 
 const eslintIgnore = [".git/", ".next/", "node_modules/", "dist/", "build/", "coverage/", "*.min.js", "*.config.js", "*.d.ts"]
-typescriptEslint.config(
+
+const config = typescriptEslint.config(
   {
     ignores: eslintIgnore,
     languageOptions: {
@@ -16,8 +15,6 @@ typescriptEslint.config(
   },
 
   ...eslintPluginStorybook.configs["flat/recommended"],
-  //  https://github.com/francoismassart/eslint-plugin-tailwindcss/pull/381
-  // ...eslintPluginTailwindcss.configs["flat/recommended"],
   typescriptEslint.configs.recommended,
   {
     plugins: {
