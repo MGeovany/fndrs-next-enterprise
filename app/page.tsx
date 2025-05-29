@@ -4,18 +4,8 @@ import { Button } from "components/ui/button"
 export const metadata: Metadata = {
   title: "FNDRS Next.js Enterprise Boilerplate",
   twitter: {
-    card: "summary_large_image",
-  },
-  openGraph: {
-    url: "https://next-enterprise.vercel.app/",
-    images: [
-      {
-        width: 1200,
-        height: 630,
-        url: "https://raw.githubusercontent.com/Blazity/next-enterprise/main/.github/assets/project-logo.png",
-      },
-    ],
-  },
+    card: "summary_large_image"
+  }
 }
 
 export default function Web() {
@@ -28,17 +18,14 @@ export default function Web() {
               FNDRS Next.js Enterprise Boilerplate
             </h1>
             <p className="mb-6 max-w-2xl font-light text-gray-500 md:text-lg lg:mb-8 lg:text-xl dark:text-gray-400">
-              Jumpstart your enterprise project with our feature-packed, high-performance Next.js boilerplate!
-              Experience rapid UI development, AI-powered code reviews, and an extensive suite of tools for a smooth and
-              enjoyable development process.
+              Jumpstart your enterprise project with our feature-packed, high-performance Next.js boilerplate! Experience rapid UI
+              development, AI-powered code reviews, and an extensive suite of tools for a smooth and enjoyable development
+              process.
             </p>
-            <Button href="https://github.com/Blazity/next-enterprise" className="mr-3">
+            <Button href="https://github.com/MGeovany/fndrs-next-enterprise/" className="mr-3">
               Get started
             </Button>
-            <Button
-              href="https://vercel.com/new/git/external?repository-url=https://github.com/Blazity/next-enterprise"
-              intent="secondary"
-            >
+            <Button href="https://github.com/MGeovany/fndrs-next-enterprise/" intent="secondary">
               Deploy Now
             </Button>
           </div>

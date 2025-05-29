@@ -1,0 +1,16 @@
+{
+  "semi": false,
+  "trailingComma": "none",
+  "tabWidth": 2,
+  "singleQuote": false,
+  "jsxSingleQuote": false,
+  "bracketSameLine": true,
+  "bracketSpacing": true,
+  "printWidth": 130,
+  "arrowParens": "always",
+  "plugins": ["@ianvs/prettier-plugin-sort-imports"],
+  "importOrder": ["^next", "<THIRD_PARTY_MODULES>", "^components/(.*)", "^[./]"],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true,
+  "endOfLine": "auto"
+}
