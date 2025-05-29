@@ -20,9 +20,7 @@
     "baseUrl": ".",
     "types": ["node", "jest", "@testing-library/jest-dom"],
     "paths": {
-      "components/*": ["./components/*"],
-      "lib/*": ["./lib/*"],
-      "hooks/*": ["./hooks/*"]
+      "@/*": ["./*"]
     },
     "plugins": [
       {
@@ -30,14 +28,6 @@
       }
     ]
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    "**/*.mjs",
-    "jest.config.js",
-    ".next/types/**/*.ts",
-    "eslint.config.mjs"
-  ],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.mjs", "jest.config.js", ".next/types/**/*.ts", "eslint.config.mjs"],
   "exclude": ["node_modules"]
 }
