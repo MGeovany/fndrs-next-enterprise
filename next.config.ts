@@ -10,6 +10,8 @@ const config: NextConfig = {
   reactStrictMode: true,
   webpack: (config) => {
     config.resolve.alias["@"] = path.resolve(__dirname)
+    console.log("🚀 Alias configurado para @:", config.resolve.alias["@"])
+
     return config
   },
   logging: {
