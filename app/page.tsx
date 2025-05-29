@@ -1,12 +1,10 @@
 import { Button } from "@/components/ui/button"
+import SEO from "@/next-seo.config"
 
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "FNDRS Next.js Enterprise Boilerplate",
-  twitter: {
-    card: "summary_large_image",
-  },
+  ...SEO,
 }
 
 export default function Web() {
