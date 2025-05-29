@@ -1,9 +1,6 @@
-# *
 User-agent: *
 Allow: /
 
-# Host
-Host: https://www.thefndrs.com
+Host: https://fndrs-next-enterprise.vercel.app
 
-# Sitemaps
-Sitemap: https://www.thefndrs.com/sitemap.xml
+Sitemap: https://fndrs-next-enterprise.vercel.app/sitemap.xml
