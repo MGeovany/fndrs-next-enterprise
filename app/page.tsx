@@ -1,5 +1,5 @@
-import { Button } from "components/ui/button"
 import { Metadata } from "next"
+import { Button } from "components/ui/button"
 
 export const metadata: Metadata = {
   title: "FNDRS Next.js Enterprise Boilerplate",
