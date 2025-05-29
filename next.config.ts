@@ -1,3 +1,5 @@
+import path from "path"
+
 import withBundleAnalyzer from "@next/bundle-analyzer"
 
 import { type NextConfig } from "next"
@@ -6,6 +8,10 @@ import { env } from "./env.mjs"
 
 const config: NextConfig = {
   reactStrictMode: true,
+  webpack: (config) => {
+    config.resolve.alias["@"] = path.resolve(__dirname)
+    return config
+  },
   logging: {
     fetches: {
       fullUrl: true,
