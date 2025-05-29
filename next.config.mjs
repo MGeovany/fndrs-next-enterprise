@@ -1,6 +1,9 @@
-import withBundleAnalyzer from "@next/bundle-analyzer";
+import withBundleAnalyzer from "@next/bundle-analyzer"
 
-let userConfig = undefined;
+// Determine if running in an App Service environment
+const isAppService = process.env.APP_SERVICE === "true" || process.env.NODE_ENV === "production"
+
+let userConfig = undefined
 const securityHeaders = [
   {
     key: "Strict-Transport-Security",
@@ -18,13 +21,13 @@ const securityHeaders = [
     key: "Cross-Origin-Resource-Policy",
     value: "same-origin",
   },
-];
+]
 
 try {
-  userConfig = await import("./v0-user-next.config.mjs");
+  userConfig = await import("./v0-user-next.config.mjs")
 } catch (e) {
   try {
-    userConfig = await import("./v0-user-next.config");
+    userConfig = await import("./v0-user-next.config")
   } catch (innerError) {}
 }
 
@@ -33,7 +36,7 @@ const nextConfig = {
   productionBrowserSourceMaps: true,
   output: "standalone",
   eslint: {
-    ignoreDuringBuilds: true,
+    ignoreDuringBuilds: isAppService ? true : false,
   },
   typescript: {
     ignoreBuildErrors: true,
@@ -57,28 +60,25 @@ const nextConfig = {
         source: "/(.*)",
         headers: securityHeaders,
       },
-    ];
+    ]
   },
-};
+}
 
 if (userConfig) {
-  const config = userConfig.default || userConfig;
+  const config = userConfig.default || userConfig
 
   for (const key in config) {
-    if (
-      typeof nextConfig[key] === "object" &&
-      !Array.isArray(nextConfig[key])
-    ) {
+    if (typeof nextConfig[key] === "object" && !Array.isArray(nextConfig[key])) {
       nextConfig[key] = {
         ...nextConfig[key],
         ...config[key],
-      };
+      }
     } else {
-      nextConfig[key] = config[key];
+      nextConfig[key] = config[key]
     }
   }
 }
 
 export default withBundleAnalyzer({
   enabled: process.env.ANALYZE === "true",
-})(nextConfig);
+})(nextConfig)
