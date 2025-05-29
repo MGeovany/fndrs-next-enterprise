@@ -1,10 +1,10 @@
-import fs from "fs"
-
-import yaml from "yaml"
+/* eslint-disable @typescript-eslint/no-require-imports */
+const fs = require("fs")
+const yaml = require("yaml")
 
 const config = yaml.parse(fs.readFileSync("./git-conventional-commits.yaml", "utf8"))
 
-export default {
+module.exports = {
   rules: {
     "type-enum": [2, "always", config.convention.commitTypes],
     "scope-enum": config.convention.commitScopes.length ? [2, "always", config.convention.commitScopes] : [0],

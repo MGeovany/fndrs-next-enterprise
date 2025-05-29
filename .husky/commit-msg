@@ -1,5 +1,17 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
 
-pnpm commitlint --edit 
-pnpm commitlint --edit $1
+pnpm commitlint --edit "$1"
+
+if [ $? -ne 0 ]; then
+  echo "\n❌ Invalid commit message."
+  echo "   Use Conventional Commit format, like:"
+  echo "     feat: add new payment method"
+  echo "     fix: resolve crash on login"
+  echo "     docs: update README"
+  echo "     chore: update dependencies"
+  echo "ℹ️  Learn more: https://www.conventionalcommits.org"
+  exit 1
+fi
+
+echo "✅ Valid commit! 🚀"
