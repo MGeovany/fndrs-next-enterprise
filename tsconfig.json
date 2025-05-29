@@ -1,33 +1,27 @@
 {
-  "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "Next.js",
   "compilerOptions": {
-    "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "target": "ES2020",
+    "lib": ["DOM", "ES2020"],
+    "module": "ESNext",
+    "moduleResolution": "Node",
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
-    "noUncheckedIndexedAccess": true,
-    "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "baseUrl": ".",
-    "types": ["node", "jest", "@testing-library/jest-dom"],
-    "paths": {
-      "@/*": ["./*"]
-    },
     "plugins": [
       {
         "name": "next"
       }
-    ]
+    ],
+    "paths": {
+      "@/*": ["./*"]
+    }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.mjs", "jest.config.js", ".next/types/**/*.ts", "eslint.config.mjs"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", ".storybook/**/*.ts"],
   "exclude": ["node_modules"]
 }
