@@ -44,12 +44,10 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
-  webpack(config) {
-    config.resolve.alias = {
-      ...(config.resolve.alias || {}),
-      "@": new URL(".", import.meta.url).pathname,
-    }
-    return config
+  turbopack: {
+    resolveAlias: {
+      "@": "./",
+    },
   },
   async headers() {
     return [
