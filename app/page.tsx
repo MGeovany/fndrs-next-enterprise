@@ -3,7 +3,7 @@ import { SocialSidebar } from "@/components/social-sidebar"
 import StarField from "@/components/starfield"
 import SEO from "@/next-seo.config"
 
-import { ArrowRight, Github, Zap } from "lucide-react"
+import { ArrowRight, Github } from "lucide-react"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
