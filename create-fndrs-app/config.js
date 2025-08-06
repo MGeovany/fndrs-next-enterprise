@@ -41,9 +41,9 @@ export default {
 
   // URLs
   urls: {
-    documentation: "https://github.com/geovanydev/fndrs-next-enterprise",
-    issues: "https://github.com/geovanydev/fndrs-next-enterprise/issues",
-    repository: "https://github.com/geovanydev/fndrs-next-enterprise",
+    documentation: "https://github.com/mgeovany/fndrs-next-enterprise",
+    issues: "https://github.com/mgeovany/fndrs-next-enterprise/issues",
+    repository: "https://github.com/mgeovany/fndrs-next-enterprise",
     nodejs: "https://nodejs.org/",
   },
 

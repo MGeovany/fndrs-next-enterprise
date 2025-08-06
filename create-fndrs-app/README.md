@@ -109,14 +109,14 @@ my-app/
 
 ## Contributing
 
-We welcome contributions! Please see our [Contributing Guide](https://github.com/geovanydev/fndrs-next-enterprise/blob/main/CONTRIBUTING.md) for details.
+We welcome contributions! Please see our [Contributing Guide](https://github.com/mgeovany/fndrs-next-enterprise/blob/main/CONTRIBUTING.md) for details.
 
 ## License
 
-MIT License - see the [LICENSE](https://github.com/geovanydev/fndrs-next-enterprise/blob/main/LICENSE) file for details.
+MIT License - see the [LICENSE](https://github.com/mgeovany/fndrs-next-enterprise/blob/main/LICENSE) file for details.
 
 ## Support
 
-- 📚 [Documentation](https://github.com/geovanydev/fndrs-next-enterprise)
-- 🐛 [Issues](https://github.com/geovanydev/fndrs-next-enterprise/issues)
-- 💬 [Discussions](https://github.com/geovanydev/fndrs-next-enterprise/discussions)
+- 📚 [Documentation](https://github.com/mgeovany/fndrs-next-enterprise)
+- 🐛 [Issues](https://github.com/mgeovany/fndrs-next-enterprise/issues)
+- 💬 [Discussions](https://github.com/mgeovany/fndrs-next-enterprise/discussions)

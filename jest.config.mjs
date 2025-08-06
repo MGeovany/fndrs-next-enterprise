@@ -8,7 +8,7 @@ const customJestConfig = {
   setupFilesAfterEnv: ["<rootDir>/jest.setup.js"],
   testEnvironment: "jest-environment-jsdom",
   modulePathIgnorePatterns: ["<rootDir>/dist/"],
-  testPathIgnorePatterns: ["<rootDir>/e2e"],
+  testPathIgnorePatterns: ["<rootDir>/e2e", "<rootDir>/create-fndrs-app"],
 }
 
 export default createJestConfig(customJestConfig)

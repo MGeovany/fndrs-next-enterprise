@@ -30,12 +30,12 @@
   "author": "Geovany Dev",
   "repository": {
     "type": "git",
-    "url": "https://github.com/geovanydev/fndrs-next-enterprise.git"
+    "url": "https://github.com/mgeovany/fndrs-next-enterprise.git"
   },
   "bugs": {
-    "url": "https://github.com/geovanydev/fndrs-next-enterprise/issues"
+    "url": "https://github.com/mgeovany/fndrs-next-enterprise/issues"
   },
-  "homepage": "https://github.com/geovanydev/fndrs-next-enterprise#readme",
+  "homepage": "https://github.com/mgeovany/fndrs-next-enterprise#readme",
   "dependencies": {
     "prompts": "^2.4.2",
     "fs-extra": "^11.1.1"

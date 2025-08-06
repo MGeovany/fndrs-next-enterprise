@@ -15,11 +15,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/geovanydev/fndrs-next-enterprise.git"
+    "url": "https://github.com/mgeovany/fndrs-next-enterprise.git"
   },
-  "homepage": "https://github.com/geovanydev/fndrs-next-enterprise#readme",
+  "homepage": "https://github.com/mgeovany/fndrs-next-enterprise#readme",
   "bugs": {
-    "url": "https://github.com/geovanydev/fndrs-next-enterprise/issues"
+    "url": "https://github.com/mgeovany/fndrs-next-enterprise/issues"
   },
   "bin": {
     "create-fndrs-next": "./create-fndrs-app/index.js"

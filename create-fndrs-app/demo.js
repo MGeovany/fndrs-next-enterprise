@@ -55,9 +55,9 @@ function demoCLI() {
   console.log("  cd fndrs-app")
   console.log("  npm run dev")
 
-  console.log("\n📚 Documentation: https://github.com/geovanydev/fndrs-next-enterprise")
-  console.log("🐛 Issues: https://github.com/geovanydev/fndrs-next-enterprise/issues")
-  console.log("⭐ Star us: https://github.com/geovanydev/fndrs-next-enterprise")
+  console.log("\n📚 Documentation: https://github.com/mgeovany/fndrs-next-enterprise")
+  console.log("🐛 Issues: https://github.com/mgeovany/fndrs-next-enterprise/issues")
+  console.log("⭐ Star us: https://github.com/mgeovany/fndrs-next-enterprise")
 
   console.log("\n" + "=".repeat(60))
   console.log("🎯 Key Improvements Made:")

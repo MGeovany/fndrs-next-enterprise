@@ -45,7 +45,7 @@ npm create fndrs-app@latest my-awesome-app
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/geovanydev/fndrs-next-enterprise.git
+   git clone https://github.com/mgeovany/fndrs-next-enterprise.git
    cd fndrs-next-enterprise/create-fndrs-app
    ```
 
