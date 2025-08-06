@@ -1,0 +1,43 @@
+{
+  "name": "create-fndrs-app",
+  "version": "1.0.4",
+  "description": "Create a new FNDRS Next.js Enterprise application with the best developer experience.",
+  "type": "module",
+  "bin": {
+    "create-fndrs-app": "index.js"
+  },
+  "files": [
+    "index.js",
+    "config.js",
+    "template/**"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT",
+  "keywords": [
+    "nextjs",
+    "typescript",
+    "tailwind",
+    "eslint",
+    "prettier",
+    "jest",
+    "playwright",
+    "boilerplate",
+    "template",
+    "create-app"
+  ],
+  "author": "Geovany Dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/geovanydev/fndrs-next-enterprise.git"
+  },
+  "bugs": {
+    "url": "https://github.com/geovanydev/fndrs-next-enterprise/issues"
+  },
+  "homepage": "https://github.com/geovanydev/fndrs-next-enterprise#readme",
+  "dependencies": {
+    "prompts": "^2.4.2",
+    "fs-extra": "^11.1.1"
+  }
+}
