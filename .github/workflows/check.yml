@@ -28,10 +28,11 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "${{ env.node_version }}"
-          cache: "pnpm"
 
       - name: Install pnpm
-        run: npm install -g pnpm@9.1.0
+        run: |
+          curl -fsSL https://get.pnpm.io/install.sh | sh -
+          echo "$HOME/.local/share/pnpm" >> $GITHUB_PATH
 
       - name: Verify pnpm installation
         run: pnpm --version
