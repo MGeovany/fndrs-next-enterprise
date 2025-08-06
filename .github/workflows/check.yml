@@ -12,20 +12,31 @@ jobs:
   check:
     name: Check
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: .
     steps:
-      - uses: actions/checkout@v4
-      - run: echo "node_version=$(cat .github/nodejs.version)" >> $GITHUB_ENV
-      - name: "use node ${{ env.node_version }}"
-        uses: actions/setup-node@v3
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Read Node.js version
+        run: echo "node_version=$(cat .github/nodejs.version)" >> $GITHUB_ENV
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: "${{ env.node_version }}"
+          cache: "pnpm"
 
-      - name: "Install pnpm & dependencies"
+      - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
-          run_install: |
-            - recursive: true
-            - args: [--frozen-lockfile]
+          version: 9.1.0
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
 
       - name: Lint check
         run: pnpm run lint
