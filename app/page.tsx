@@ -54,7 +54,7 @@ export default function MainPage() {
 
           <div className="flex flex-col sm:flex-row gap-4 w-full max-w-lg">
             <a
-              className="flex-1 inline-flex items-center justify-center whitespace-nowrap rounded-lg text-md font-medium focus-visible:outline-none cursor-pointer focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none border h-12 px-6 py-3 bg-gradient-to-r from-blue-600/20 to-purple-600/20 border-blue-500/30 hover:from-blue-600/30 hover:to-purple-600/30 hover:border-blue-500/50 focus:ring-2 focus:ring-blue-500/20 transition-all duration-300 ease-out disabled:opacity-50 disabled:cursor-not-allowed shadow-lg"
+              className="flex-1 inline-flex items-center justify-center whitespace-nowrap rounded-lg text-md font-medium focus-visible:outline-none cursor-pointer focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none border h-12 px-6 py-3 bg-gradient-to-r bg-white/[0.06] border-white/10 hover:bg-white/[0.12] hover:border-white/20 focus:ring-2 focus:ring-white/20  transition-all duration-300 ease-out disabled:opacity-50 disabled:cursor-not-allowed shadow-lg"
               href="https://github.com/mgeovany/fndrs-next-enterprise">
               <Github className="mr-2 h-5 w-5" />
               View on GitHub
